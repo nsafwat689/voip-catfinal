@@ -4,6 +4,7 @@ import { Search, ChevronRight, Clock, User, Tag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { articles } from '@/data/articles';
 import { useSEO } from '@/hooks/useSEO';
+import Header from '@/components/Header';
 
 export default function Articles() {
   useSEO({
@@ -63,6 +64,7 @@ export default function Articles() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
+            <Header />
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: -20 }}
