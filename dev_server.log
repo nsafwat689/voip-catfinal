@@ -1,0 +1,22 @@
+nohup: ignoring input
+
+> voip_website@1.0.0 dev /home/ubuntu/voip-cat-updated
+> vite --host
+
+Port 5173 is in use, trying another one...
+Port 5174 is in use, trying another one...
+
+  VITE v7.1.9  ready in 316 ms
+
+  ➜  Local:   http://localhost:5175/
+  ➜  Network: http://169.254.0.21:5175/
+(!) %VITE_ANALYTICS_ENDPOINT% is not defined in env variables found in /index.html. Is the variable mistyped?
+(!) %VITE_ANALYTICS_WEBSITE_ID% is not defined in env variables found in /index.html. Is the variable mistyped?
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+6036 |    initial-value: 0;
+6037 |  }
+6038 |  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600...
+     |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6039 |  :root {
+6040 |    --primary: #00A3FF;
