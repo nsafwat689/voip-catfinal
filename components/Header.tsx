@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useTheme } from '@/contexts/ThemeContext';
 
 /**
  * Header Component - Cyber Tech Design
@@ -10,7 +9,6 @@ import { useTheme } from '@/contexts/ThemeContext';
  */
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   const navLinks = [
     { label: 'Home', href: '/' },
@@ -57,17 +55,6 @@ export default function Header() {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-muted transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {theme === 'light' ? (
-                <Moon className="w-5 h-5 text-foreground" />
-              ) : (
-                <Sun className="w-5 h-5 text-foreground" />
-              )}
-            </button>
             <Button
               variant="outline"
               className="border-primary text-primary hover:bg-primary/5 uppercase tracking-wider text-xs"
@@ -109,17 +96,6 @@ export default function Header() {
                 </a>
               ))}
               <div className="flex gap-2 px-4 pt-2">
-                <button
-                  onClick={toggleTheme}
-                  className="p-2 rounded-lg hover:bg-muted transition-colors"
-                  aria-label="Toggle dark mode"
-                >
-                  {theme === 'light' ? (
-                    <Moon className="w-5 h-5 text-foreground" />
-                  ) : (
-                    <Sun className="w-5 h-5 text-foreground" />
-                  )}
-                </button>
                 <Button
                   variant="outline"
                   className="flex-1 border-primary text-primary hover:bg-primary/5 uppercase tracking-wider text-xs"
